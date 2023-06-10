@@ -5,9 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "platinum", "review/*" ]
+    branches: [ "platinum", "feature/*", "review/*" ]
   pull_request:
-    branches: [ "platinum", "review/*" ]
+    branches: [ "platinum", "feature/*", "review/*" ]
 
 jobs:
   build:
