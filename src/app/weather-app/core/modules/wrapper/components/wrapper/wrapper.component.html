@@ -1,0 +1,26 @@
+<mat-grid-list cols="6">
+  <mat-grid-tile
+    [colspan]="6"
+    [rowspan]="1"
+    [style.background]="'grey'">
+    Select Location
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="2"
+    [rowspan]="2">
+    <ng-content select=".forecast-card"></ng-content>
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="4"
+    [rowspan]="1"
+    [style.background]="'blue'">
+    Days list with short weather info
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="4"
+    [rowspan]="1"
+    [style.background]="'green'">
+    Temperature graphic
+
+  </mat-grid-tile>
+</mat-grid-list>

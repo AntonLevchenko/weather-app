@@ -13,6 +13,11 @@ import { WeatherForecastModule } from "./weather-forecast/weather-forecast.modul
     CoreModule,
     LocationModule,
     WeatherForecastModule
+  ],
+  exports: [
+    CoreModule,
+    LocationModule,
+    WeatherForecastModule
   ]
 })
 export class WeatherAppModule { }
