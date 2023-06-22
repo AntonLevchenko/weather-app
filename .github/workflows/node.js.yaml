@@ -1,8 +1,6 @@
 name: CI/CD
 
 on:
-  push:
-    branches: [ "platinum", "review/*", "feature/*" ]
   pull_request:
     branches: [ "platinum", "review/*", "feature/*" ]
 
