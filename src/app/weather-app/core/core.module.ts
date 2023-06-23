@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { BaseHttpService } from './services/base-http.service';
 import { WrapperModule } from './modules/wrapper/wrapper.module';
+import { WeatherApiModule } from "./modules/weather-api/weather-api.module";
 
 @NgModule({
   declarations: [],
@@ -12,7 +13,8 @@ import { WrapperModule } from './modules/wrapper/wrapper.module';
   imports: [
     CommonModule,
     HttpClientModule,
-    WrapperModule
+    WrapperModule,
+    WeatherApiModule
   ],
   exports: [
     WrapperModule
