@@ -4,9 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { BaseHttpService } from './services/base-http.service';
 import { WrapperModule } from './modules/wrapper/wrapper.module';
 import { WeatherApiModule } from "./modules/weather-api/weather-api.module";
+import { TemperatureUnitsPipe } from './pipes/temperature-units.pipe';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    TemperatureUnitsPipe
+  ],
   providers: [
     BaseHttpService
   ],
@@ -17,7 +20,8 @@ import { WeatherApiModule } from "./modules/weather-api/weather-api.module";
     WeatherApiModule
   ],
   exports: [
-    WrapperModule
+    WrapperModule,
+    TemperatureUnitsPipe
   ]
 })
 export class CoreModule { }

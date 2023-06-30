@@ -1,0 +1,6 @@
+<div class="weather-info">
+  <span class="weather-data location">{{ weatherData.name }}, {{ weatherData.sys.country }}</span>
+  <span class="weather-data temperature current-temperature">{{ weatherData.main.temp | number: '2.0-0' }}<span>&#8451;</span></span>
+  <span class="weather-data temperature">Feels like: {{ weatherData.main.feels_like | number: '2.0-0' }}<span>&#8451;</span></span>
+  <span class="weather-data weather-state">{{ weatherData.weather[0].description | titlecase }}</span>
+</div>

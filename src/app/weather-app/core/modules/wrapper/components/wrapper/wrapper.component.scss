@@ -1,0 +1,42 @@
+@import "variables";
+
+:host {
+  .grid {
+    &-holder {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 40px;
+      min-height: 100%;
+      padding: 50px;
+      background: radial-gradient($base-background-lighter, $base-background-darkness);
+
+      .location-holder {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background: gray;
+      }
+
+      .forecast-card-holder {
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      .days-forecast-holder {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background: blue;
+      }
+
+      .temperature-holder {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background: green;
+      }
+    }
+  }
+}

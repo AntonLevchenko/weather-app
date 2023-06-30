@@ -6,7 +6,7 @@ import {
   HttpInterceptor
 } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Units } from "../enums/units.enum";
+import { Units } from "../../../enums/units.enum";
 
 @Injectable()
 export class ForecastConfigurationsInterceptor implements HttpInterceptor {
