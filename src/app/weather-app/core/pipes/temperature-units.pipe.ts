@@ -6,8 +6,8 @@ import { Units, UnitsHTMLCodes } from "../enums/units.enum";
 })
 export class TemperatureUnitsPipe implements PipeTransform {
 
-  transform(value: number, units: Units): unknown {
-    return value.toFixed(2) + `<span>${UnitsHTMLCodes[units]}</span>`;
+  transform(value: number, units: Units = Units.metric): string {
+    return value.toFixed(0) + `<span>${UnitsHTMLCodes[units]}</span>`;
   }
 
 }

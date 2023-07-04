@@ -103,10 +103,17 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles"
+              ]
+            },
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "codeCoverage": true,
+            "scripts": [],
+            "karmaConfig": "karma.conf.js"
           }
         }
       }
