@@ -20,5 +20,4 @@ export class CurrentWeatherCardComponent implements OnInit {
   ngOnInit(): void {
     this.store.dispatch(CurrentWeatherActions.getWeatherData());
   }
-
 }
