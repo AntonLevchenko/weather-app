@@ -25,6 +25,14 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - uses: actions/cache@v1
+        id: npm-cache
+        with:
+          path: ~/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
       - name: Build
         run: npm run build --if-present
 
@@ -38,6 +46,15 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
+      - uses: actions/cache@v1
+        id: npm-cache
+        with:
+          path: ~/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
 
       - uses: actions/checkout@v3
 
