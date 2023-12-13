@@ -18,7 +18,7 @@
     outline: none;
     border: 1px solid rgba($white, .1);
 
-    ~.form-label {
+    ~.input-label {
       top: 0;
       left: 10px;
       color: rgba($base-form-text-color, .4);
@@ -29,7 +29,7 @@
     color: transparent;
   }
 
-  &:not(:placeholder-shown) ~ .form-label {
+  &:not(:placeholder-shown) ~ .input-label {
     cursor: text;
     top: 0;
     left: 10px;
@@ -37,13 +37,13 @@
   }
 }
 
-.form-holder {
+.input-holder {
   position: relative;
   font-size: 18px;
   color: $base-form-text-color;
 }
 
-.form-label {
+.input-label {
   position: absolute;
   top: 50%;
   left: 20px;
