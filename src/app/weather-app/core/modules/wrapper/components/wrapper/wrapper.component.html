@@ -1,5 +1,7 @@
 <div class="grid-holder">
-  <div class="grid-item location-holder">Select Location</div>
+  <div class="grid-item location-holder">
+    <ng-content select=".location"></ng-content>
+  </div>
   <div class="grid-item forecast-card-holder">
     <ng-content select=".forecast-card"></ng-content>
   </div>

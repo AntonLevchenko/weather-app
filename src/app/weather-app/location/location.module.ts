@@ -1,12 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { LocationComponent } from './components/location/location.component';
+import { CoreModule } from "../core/core.module";
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    LocationComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    CoreModule
+  ],
+  exports: [
+    LocationComponent
   ]
 })
 export class LocationModule { }
