@@ -14,6 +14,7 @@ import { BackgroundWeatherImageDirective } from './directives/background-weather
   declarations: [
     CurrentWeatherCardComponent,
     CurrentWeatherInfoComponent,
+    CurrentWeatherInfoComponent,
     BackgroundWeatherImageDirective
   ],
   imports: [
