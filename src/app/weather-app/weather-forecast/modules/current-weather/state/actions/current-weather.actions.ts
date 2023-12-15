@@ -6,5 +6,6 @@ export const CurrentWeatherActions = createActionGroup({
   events: {
     'Get Weather Data': emptyProps(),
     'Weather Loaded': props<{ currentWeather: ICurrentWeather }>(),
+    'Current Weather Loaded Error': emptyProps(),
   },
 })

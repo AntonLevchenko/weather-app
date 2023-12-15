@@ -6,13 +6,14 @@ import { WrapperComponent } from "./weather-app/core/modules/wrapper/components/
 import {
   CurrentWeatherCardComponent
 } from "./weather-app/weather-forecast/modules/current-weather/components/current-weather-card/current-weather-card.component";
+import { LocationComponent } from './weather-app/location/components/location/location.component';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
     imports: [RouterTestingModule],
     declarations: [
       AppComponent,
-      MockComponents(WrapperComponent, CurrentWeatherCardComponent)
+      MockComponents(WrapperComponent, CurrentWeatherCardComponent, LocationComponent)
     ]
   }));
 

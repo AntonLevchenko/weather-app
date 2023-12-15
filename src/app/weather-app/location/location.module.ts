@@ -6,6 +6,7 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from "@ngrx/effects";
 import { UpdatedLocationEffects } from "./state/effects/updated-location.effects";
 import { locationFeature } from "./state/location.feature";
+import { LocationService } from './services/location.service';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,9 @@ import { locationFeature } from "./state/location.feature";
     CoreModule,
     StoreModule.forFeature(locationFeature.name, locationFeature.reducer),
     EffectsModule.forFeature([UpdatedLocationEffects])
+  ],
+  providers: [
+    LocationService
   ],
   exports: [
     LocationComponent
