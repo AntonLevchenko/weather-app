@@ -1,0 +1,53 @@
+@import "variables";
+
+.input {
+  width: 100%;
+  padding: 15px 20px;
+  color: $base-form-text-color;
+  border-radius: 10px;
+  background: linear-gradient(168deg, rgba(46,51,90,.26) 5%, rgba(28,27,51,.26) 95%);
+  box-shadow: 0 4px 4px 0 rgba($black,.25) inset;
+  border: 1px solid transparent;
+  transition: all .3s ease-out;
+
+  &:hover {
+    box-shadow: 2px 5px 5px 0 rgba($black,.4) inset;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid rgba($white, .1);
+
+    ~.input-label {
+      top: 0;
+      left: 10px;
+      color: rgba($base-form-text-color, .4);
+    }
+  }
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:not(:placeholder-shown) ~ .input-label {
+    cursor: text;
+    top: 0;
+    left: 10px;
+    color: rgba($base-form-text-color, .4);
+  }
+}
+
+.input-holder {
+  position: relative;
+  font-size: 18px;
+  color: $base-form-text-color;
+}
+
+.input-label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(0, -50%);
+  transition: all .3s linear;
+}
+

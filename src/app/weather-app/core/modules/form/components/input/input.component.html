@@ -1,0 +1,9 @@
+<div class="input-holder">
+  <input class="input"
+         type="text"
+         id="inputName"
+         [placeholder]="placeholder"
+         [(ngModel)]="value"
+         (ngModelChange)="handleChange($event)">
+  <label for="inputName" class="input-label">{{ placeholder }}</label>
+</div>

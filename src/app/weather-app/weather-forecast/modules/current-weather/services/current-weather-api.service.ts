@@ -13,8 +13,8 @@ export class CurrentWeatherApiService {
     private weatherApiService: WeatherApiService
   ) { }
 
-  public getCurrentWeather(): Observable<ICurrentWeather> {
-    return this.weatherApiService.getWeatherForecast(`weather?q=${DEFAULT_LOCATION}`)
+  public getCurrentWeather(location: string = DEFAULT_LOCATION): Observable<ICurrentWeather> {
+    return this.weatherApiService.getWeatherForecast(`weather?q=${location}`)
   }
 
 }

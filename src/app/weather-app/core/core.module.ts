@@ -5,6 +5,7 @@ import { BaseHttpService } from './services/base-http.service';
 import { WrapperModule } from './modules/wrapper/wrapper.module';
 import { WeatherApiModule } from "./modules/weather-api/weather-api.module";
 import { TemperatureUnitsPipe } from './pipes/temperature-units.pipe';
+import { FormModule } from "./modules/form/form.module";
 
 @NgModule({
   declarations: [
@@ -17,11 +18,13 @@ import { TemperatureUnitsPipe } from './pipes/temperature-units.pipe';
     CommonModule,
     HttpClientModule,
     WrapperModule,
-    WeatherApiModule
+    WeatherApiModule,
+    FormModule
   ],
   exports: [
     WrapperModule,
-    TemperatureUnitsPipe
+    TemperatureUnitsPipe,
+    FormModule
   ]
 })
 export class CoreModule { }
