@@ -1,0 +1,20 @@
+export const WeatherConditionCodes = {
+  '01d': 'clear',
+  '02d': 'clouds',
+  '03d': 'clouds',
+  '04d': 'clouds',
+  '09d': 'drizzle',
+  '10d': 'rain',
+  '11d': 'thunderstorm',
+  '13d': 'snow',
+  '50d': 'mist',
+  '01n': 'clear-night',
+  '02n': 'clouds-night',
+  '03n': 'clouds-night',
+  '04n': 'clouds-night',
+  '09n': 'drizzle-night',
+  '10n': 'rain-night',
+  '11n': 'thunderstorm-night',
+  '13n': 'snow-night',
+  '50n': 'mist-night'
+}

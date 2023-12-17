@@ -1,10 +1,9 @@
-<div class="card-holder" *ngIf="currentWeatherData$ | async as weatherData">
+<div class="card-holder"
+     appBackgroundWeatherImage
+     *ngIf="currentWeatherData$ | async as weatherData">
   <div class="card-content">
     <div class="card-header">
       <app-current-weather-info [weatherData]="weatherData"></app-current-weather-info>
-    </div>
-    <div class="image-holder">
-      <img src="/assets/images/current-weather/house.svg" alt="">
     </div>
   </div>
 </div>

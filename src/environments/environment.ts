@@ -3,6 +3,6 @@ import { IEnvironmentData } from '../app/weather-app/core/interfaces/environment
 export const environment: IEnvironmentData = {
   weatherApi: {
     url: 'https://api.openweathermap.org/data/2.5/',
-    key: 'b1b15e88fa797225412429c1c50c122a1'
+    key: '0e42dce219fe69f7dd26e1af72f36c3'
   }
 };
